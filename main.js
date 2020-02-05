@@ -156,3 +156,43 @@ while(y<10) {
     document.write(y + "Do you want some cockies? <br />");
     y++;
 }
+//do while
+var x = 5;
+do{
+    document.write(x + 'hey! <br />');
+    x++;
+}while(x<=20);
+
+//creating my own objects
+function person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+var nilo = new person(' Nilo Peligro <br/> ', 28);
+var adrea = new person(' Andrea Corr <br /> ', 40);
+const haley = new person(' Haley Williams <br /> ', 39);
+
+document.write(nilo.name);
+document.write(adrea.name);
+document.write(adrea.age);
+document.write(haley.name);
+
+// object initializers
+nilo = {name:' Nilo Peligro ', age:28};
+andrea = {name:' Andrea Corr ', age:40};
+
+document.write(nilo.name + ' loves ' + andrea.name + ' despite her age ' + andrea.age);
+
+//adding methods to my object
+function people(name, age) {
+    this.name = name;
+    this.age = age;
+    this.yearsUntilRetire = yearsLeft;
+}
+function yearsLeft() {
+    var numYears = 65 - this.age;
+    return numYears;
+}
+var nilo = new people('Nilo Peligro<br />', 28);
+
+document.write(nilo.yearsUntilRetire());
