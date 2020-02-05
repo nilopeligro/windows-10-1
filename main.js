@@ -42,6 +42,19 @@ function addNumbers(a, b)  {
     return c;
 }
 document.write(addNumbers(10, 5));
+
+//calling function from another function
+    function doFirst() {
+        document.write(' hey! this is first ');
+    }
+    function doSecond() {
+        document.write('hey! second here');
+    }
+    function start() {
+        doFirst();
+        doSecond();
+    }
+    start();
 //if else statement
 var show = 10;
 var eat = 10;
