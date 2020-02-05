@@ -196,3 +196,8 @@ function yearsLeft() {
 var nilo = new people('Nilo Peligro<br />', 28);
 
 document.write(nilo.yearsUntilRetire());
+
+// arrays
+var people = new Array('Nilo', 'Andrea', 'Haley', 'Anne')
+
+document.write(people[1]);
